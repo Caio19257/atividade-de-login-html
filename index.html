@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        label, input, select, button {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <form action="#" method="post">
         <h1>Cadastro de Usuario</h1>
         <label for="nome">Nome Completo:<label>
         <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
-
+        <p>
         <Label for="nascimento">Data de Nascimento</Label>
         <input type="date" name="nascimento" id="nascimento" required>
-
+        </p>   
         <label for="genêro">Genêro</label>
         <select name="genêro" id="genêro" required>
             <option value="Feminino">Feminino</option>
             <option value="Masculino">Masculino</option>
-            <option value="Outro"></option>
+            <option value="Outro">Outro</option>
         </select>
 
         <label for="telefone">telefone:</label>
@@ -63,7 +73,7 @@
         </select>
     
         <button type="submit">Enviar cadastro</button>
-        <button type="reset" formaction="segunda página">Limpar</button> 
+        <button type="reset" formaction="2 index.html">Limpar</button> 
     </form>
 </body>
 </html>
